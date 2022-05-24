@@ -1,0 +1,15 @@
+# •	Плодовете "fruit" имат следните възможни стойности:  banana, apple, kiwi, cherry, lemon и grapes;
+# •	Зеленчуците "vegetable" имат следните възможни стойности:  tomato, cucumber, pepper и carrot;
+# •	Всички останали са "unknown".
+# Да се изведе "fruit", "vegetable" или "unknown" според въведения продукт
+
+product = input()
+
+is_fruit = product == "banana" or product == "apple" or product == "kiwi" or product == "cherry" or product == "lemon" or product == "grapes"
+is_vegetable = product == "tomato" or product == "cucumber" or product == "pepper" or product == "carrot"
+if is_fruit:
+    print("fruit")
+elif is_vegetable:
+    print("vegetable")
+else:
+    print("unknown")
